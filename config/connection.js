@@ -1,5 +1,7 @@
+//mysql module
 var mysql = require("mysql");
 
+//connect with heroku db or local db
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 }

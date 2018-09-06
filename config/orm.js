@@ -1,5 +1,7 @@
+//grab connection to mysql
 var connection = require("../config/connection.js");
 
+//build ? helper
 function printQuestionMarks(num) {
     var arr = [];
 
@@ -10,6 +12,7 @@ function printQuestionMarks(num) {
     return arr.toString();
 };
 
+//helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
     var arr = [];
     for (var key in ob) {
@@ -25,6 +28,7 @@ function objToSql(ob) {
     return arr.toString();
 };
 
+//object for mysql statments
 var orm = {
     selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
@@ -45,8 +49,6 @@ var orm = {
       queryString += printQuestionMarks(vals.length);
       queryString += ") ";
   
-      console.log(queryString);
-  
       connection.query(queryString, vals, function(err, result) {
         if (err) {
           throw err;
@@ -62,8 +64,7 @@ var orm = {
       queryString += objToSql(objColVals);
       queryString += " WHERE ";
       queryString += condition;
-  
-      console.log(queryString);
+
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
@@ -74,4 +75,5 @@ var orm = {
     },
 };
 
+//export object
 module.exports = orm;
