@@ -1,0 +1,54 @@
+body {
+    background-image: url("../img/burger.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #a33100;
+    background-color: black;
+    font-family: 'Dosis', sans-serif;
+}
+
+.btn {
+    background-color: #a33100;
+    font-family: 'Dosis', sans-serif;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.sbmtbtn:hover {
+    color: #a33100;
+    background-color: white;
+}
+
+textarea, label, .input-field {
+    color: white!important;
+    font-family: 'Dosis', sans-serif!important;
+    font-size: 30px;
+}
+
+textarea.materialize-textarea {
+    border-bottom: 1px solid white!important;
+    box-shadow: 0 1px 0 0 white!important;
+}
+
+.collection-item {
+    color: #a33100;
+    font-family: 'Dosis', sans-serif;
+    width: 10em;
+}
+
+.eatbtn {
+    background-color: #a33100;
+   color: white;
+}
+
+.card {
+   background-color: white;
+   color: #a33100;
+}
+
+.container {
+    width: 90%;
+}
