@@ -10,16 +10,14 @@ body {
 .btn {
     background-color: #a33100;
     font-family: 'Dosis', sans-serif;
+    margin: 0.5em;
 }
 
 .btn:hover {
-    color: white;
-    background-color: black;
-}
-
-.sbmtbtn:hover {
     color: #a33100;
     background-color: white;
+    font-weight: bolder;
+    border: 1px solid#a33100;
 }
 
 textarea, label, .input-field {
@@ -39,16 +37,11 @@ textarea.materialize-textarea {
     width: 10em;
 }
 
-.eatbtn {
-    background-color: #a33100;
-   color: white;
-}
-
 .card {
    background-color: white;
    color: #a33100;
-   width: 10em;
-   height: 10em;
+   width: 13em;
+   height: 13em;
    text-align: center;
 }
 
